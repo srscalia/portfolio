@@ -18,6 +18,9 @@ class App extends Component {
         <Header/>
         <Introduction/>
         <DownArrow/>
+        <Introduction/>
+        <DownArrow/>
+        <Introduction/>
       </Fragment>
     );
   }
