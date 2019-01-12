@@ -1,12 +1,14 @@
-.App {
+.Introduction {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  flex-direction: column;
+  height: 100vh;
   font-size: 3vw;
   margin-left:5em;
   margin-right:5em;
   font-weight: bold;
+  position: relative;
 }
 
 body {
@@ -27,7 +29,7 @@ body {
   margin-right:5%;
 }
 #shelby {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1.25em;
 }
 
@@ -41,6 +43,15 @@ body {
 #downArrow {
   display: flex;
   justify-content: center;
-  height: 10vw;
-  font-size: 3vw;
+  align-items: flex-end;
+  font-size: 3.5vw;
+  position: absolute;
+  bottom: 8%
+}
+
+.arrow:hover {
+  -webkit-animation: fadeIn 4s;
+  animation: fadeIn 4s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
 }

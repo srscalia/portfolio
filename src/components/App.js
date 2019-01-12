@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import Header from './Header.js';
 import Introduction from './Introduction.js'
-import DownArrow from './DownArrow.js'
+import About from './About.js'
 
-import './App.css';
+import '../App.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,10 +16,6 @@ class App extends Component {
     return (
       <Fragment>
         <Header/>
-        <Introduction/>
-        <DownArrow/>
-        <Introduction/>
-        <DownArrow/>
         <Introduction/>
       </Fragment>
     );
