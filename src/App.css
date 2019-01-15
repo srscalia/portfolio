@@ -27,7 +27,8 @@ body {
 
 
 #header {
-  height: 100px;
+  font-size: 1em;
+  height: 10vh;
   width: 90%;
   position: fixed;
   top: 0;
@@ -41,15 +42,14 @@ body {
 #shelby {
   font-weight: 900;
   font-size: 1.25em;
-  /* position: fixed;
-  left: 50%; */
+   text-align: center;
 }
 
 #navRight {
   display: flex;
   justify-content: space-between;
   width: 140px;
-
+  float: right;
 }
 
 #downArrow {
