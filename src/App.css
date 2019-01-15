@@ -1,4 +1,9 @@
-.Introduction {
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.IntroductionContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,10 +16,15 @@
   position: relative;
 }
 
-body {
-  margin: 0px;
-  font-family: 'Montserrat', sans-serif;
+.AboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
 }
+
 
 #header {
   height: 100px;
@@ -31,6 +41,8 @@ body {
 #shelby {
   font-weight: 900;
   font-size: 1.25em;
+  /* position: fixed;
+  left: 50%; */
 }
 
 #navRight {
@@ -47,6 +59,11 @@ body {
   font-size: 3.5vw;
   position: absolute;
   bottom: 8%
+}
+
+#aboutText{
+  max-width: 500px;p[8i ]
+  max-height: 500px;
 }
 
 .arrow:hover {
