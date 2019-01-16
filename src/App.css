@@ -25,6 +25,13 @@ body {
   position: relative;
 }
 
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 
 #header {
   font-size: 1em;
@@ -62,7 +69,7 @@ body {
 }
 
 #aboutText{
-  max-width: 500px;p[8i ]
+  max-width: 65vw;
   max-height: 500px;
 }
 
