@@ -9,11 +9,21 @@ class Contact extends Component {
     return (
       <div className="contactContainer">
         <div id="iconContainer">
-          <FontAwesomeIcon icon='envelope' />
-          <FontAwesomeIcon icon={['fab', 'twitter']} />
-          <FontAwesomeIcon icon={['fab', 'medium']} />
-          <FontAwesomeIcon icon={['fab', 'github']} />
-          <FontAwesomeIcon icon={['fab', 'linkedin']} />
+          <a className='contactIcon' href = "mailto: shelby.scalia@gmail.com">
+            <FontAwesomeIcon icon='envelope' />
+          </a>
+          <a className='contactIcon' href='https://twitter.com/shelby_scalia' target="_blank">
+            <FontAwesomeIcon icon={['fab', 'twitter']} />
+          </a>
+          <a className='contactIcon' href='https://linkedin.com/in/shelby-scalia' target="_blank">
+            <FontAwesomeIcon icon={['fab', 'linkedin']}/>
+          </a>
+          <a className='contactIcon' href='https://github.com/srscalia' target="_blank">
+            <FontAwesomeIcon icon={['fab', 'github']} />
+          </a>
+          <a className='contactIcon' href="https://medium.com/@shelby.scalia" target="_blank">
+            <FontAwesomeIcon icon={['fab', 'medium']} />
+          </a>
         </div>
         <div id="upArrow">
           <div onClick={()=>this.scroll()} className='arrow'>
