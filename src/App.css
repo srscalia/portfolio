@@ -29,9 +29,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
+  position: relative;
 }
-
 
 #header {
   font-size: 1em;
@@ -67,10 +68,26 @@ body {
   position: absolute;
   bottom: 8%
 }
+#upArrow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 3.5vw;
+  position: absolute;
+  bottom: 8%
+}
 
-#aboutText{
+#aboutText {
   max-width: 65vw;
   max-height: 500px;
+}
+
+#iconContainer {
+  width: 40vw;
+  max-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3.5vw;
 }
 
 .arrow:hover {

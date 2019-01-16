@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class About extends Component {
-
+  scroll = ()=>{
+    window.scrollBy({ top:1000, left: 0, behavior: 'smooth' })
+  }
+  
   render() {
     return (
       <div className="AboutContainer">
@@ -12,7 +15,7 @@ class About extends Component {
           <p>Having completed Flatiron's 15-week <a href="https://flatironschool.com/career-courses/coding-bootcamp/">Immersive Software Engineering Bootcamp</a>, I am excited by the idea of solving challenging problems for a company in the fashion and/or beauty space.</p>
         </div>
         <div id="downArrow">
-          <div className='arrow'><FontAwesomeIcon icon="caret-down"/></div>
+          <div onClick={()=>this.scroll()} className='arrow'><FontAwesomeIcon icon="caret-down"/></div>
         </div>
       </div>
     )
