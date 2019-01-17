@@ -23,11 +23,9 @@ class App extends Component {
     return (
       <Fragment>
         <Header/>
-        <div id="wrap">
-          <Introduction/>
-          <About/>
-          <Contact/>
-        </div>
+        <Introduction/>
+        <About/>
+        <Contact/>
       </Fragment>
     );
   }
