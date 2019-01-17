@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class Introduction extends Component {
 
   scroll = ()=>{
-    window.scrollBy({ top: 875, left: 0, behavior: 'smooth' })
+    window.scrollBy({ top: window.innerHeight, left: 0, behavior: 'smooth' })
   }
 
   render() {

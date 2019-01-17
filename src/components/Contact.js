@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Contact extends Component {
   scroll = ()=>{
-    window.scrollBy({ top:-1000, left: 0, behavior: 'smooth' })
+    window.scrollBy({ top:-window.innerHeight, left: 0, behavior: 'smooth' })
   }
   render() {
     return (
