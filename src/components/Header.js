@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
+
+  contactClick=()=>{
+    console.log('hi')
+  }
+
+
   render() {
     return (
-      <div id="header">
-        <div>Contact</div>
+      <nav id="header">
+        <div id="contact" href="" onClick={()=>this.contactClick()}>Contact</div>
         <div id="shelby">SHELBY</div>
         <div id='navRight'>
-          <div>About</div>
-          <div>Portfolio</div>
+          <div href="">About</div>
+          <div href="">Portfolio</div>
         </div>
-      </div>
+      </nav>
     )
   }
 }

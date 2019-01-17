@@ -5,9 +5,7 @@ import About from './About.js'
 import Contact from './Contact.js'
 
 import '../App.css';
-
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { faCaretDown as CaretDown } from '@fortawesome/free-solid-svg-icons'
 import { faCaretUp as CaretUp } from '@fortawesome/free-solid-svg-icons'
@@ -25,9 +23,11 @@ class App extends Component {
     return (
       <Fragment>
         <Header/>
-        <Introduction/>
-        <About/>
-        <Contact/>
+        <div id="wrap">
+          <Introduction/>
+          <About/>
+          <Contact/>
+        </div>
       </Fragment>
     );
   }

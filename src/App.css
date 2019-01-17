@@ -35,11 +35,13 @@ body {
 }
 
 #header {
+  z-index: 1030;
   font-size: 1em;
   height: 10vh;
   width: 90%;
   position: fixed;
   top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +49,8 @@ body {
   margin-left: 5%;
   margin-right:5%;
 }
+
+
 #shelby {
   font-weight: 900;
   font-size: 1.25em;
@@ -88,6 +92,10 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 3.5vw;
+}
+
+.icon-cog {
+  color: black;
 }
 
 .arrow:hover {
