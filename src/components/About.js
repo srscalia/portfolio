@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class About extends Component {
+
+
   scroll = ()=>{
     window.scrollBy({ top: window.innerHeight, left: 0, behavior: 'smooth' })
   }

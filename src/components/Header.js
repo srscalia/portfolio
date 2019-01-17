@@ -6,15 +6,6 @@ class Header extends Component {
     window.scrollTo(0,document.body.scrollHeight)
   }
 
-  aboutClick=()=>{
-    console.log('about')
-  }
-
-  portfolioClick=()=>{
-    console.log('Portfolio')
-  }
-
-
   shelbyClick =()=>{
     window.scrollTo(0,-document.body.scrollHeight)
   }
@@ -22,11 +13,11 @@ class Header extends Component {
   render() {
     return (
       <nav id="header">
-        <div id="contact" onClick={()=>this.contactClick()}>Contact</div>
-        <div id="shelby" onClick={()=>this.shelbyClick()}>SHELBY</div>
+        <div className="headerHover" id="contact" onClick={()=>this.contactClick()}>Contact</div>
+        <div className="headerHover" id="shelby" onClick={()=>this.shelbyClick()}>SHELBY</div>
         <div id='navRight'>
-          <div onClick={()=>this.aboutClick()}>About</div>
-          <div onClick={()=>this.portfolioClick()}>Portfolio</div>
+          <div onClick={()=>this.props.aboutClick()} className="headerHover">About</div>
+          <div className="headerHover" onClick={()=>this.props.portfolioClick()}>Portfolio</div>
         </div>
       </nav>
     )

@@ -122,3 +122,7 @@ body {
   animation-iteration-count: infinite;
   cursor: pointer;
 }
+
+.headerHover {
+  cursor: pointer;
+}

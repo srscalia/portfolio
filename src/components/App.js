@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+
 import Header from './Header.js';
 import Introduction from './Introduction.js'
 import About from './About.js'
@@ -19,12 +20,25 @@ library.add(CaretDown, CaretUp, faTwitter, faMedium, faLinkedin, faGithub, faEnv
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.refAbout = React.createRef()
+  }
+
+  aboutClick=()=>{
+    this.refAbout.current.scrollIntoView();
+  }
+
+  portfolioClick=()=>{
+    console.log('Portfolio')
+  }
+
   render() {
     return (
       <Fragment>
-        <Header/>
+        <Header aboutClick={this.aboutClick} portfolioClick={this.portfolioClick}/>
         <Introduction/>
-        <About/>
+        <div ref={this.refAbout}><About/></div>
         <Contact/>
       </Fragment>
     );
