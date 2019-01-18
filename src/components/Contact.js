@@ -7,7 +7,7 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div className="contactContainer">
+      <div className="ContactContainer">
         <div id="iconContainer">
           <a className='contactIcon' href="mailto: shelby.scalia@gmail.com">
             <FontAwesomeIcon style={{color: 'black'}} icon='envelope' />

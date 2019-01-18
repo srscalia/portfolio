@@ -30,7 +30,17 @@ body {
   position: relative;
 }
 
-.contactContainer {
+.PortfolioContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  background-color: #5b9bd5;
+}
+
+.ContactContainer {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react';
 import Header from './Header.js';
 import Introduction from './Introduction.js'
 import About from './About.js'
+import Portfolio from './Portfolio.js'
 import Contact from './Contact.js'
 
 import '../App.css';
@@ -23,6 +24,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.refAbout = React.createRef()
+    this.refPortfolio = React.createRef()
   }
 
   aboutClick=()=>{
@@ -30,7 +32,7 @@ class App extends Component {
   }
 
   portfolioClick=()=>{
-    console.log('Portfolio')
+    this.refPortfolio.current.scrollIntoView();
   }
 
   render() {
@@ -39,6 +41,7 @@ class App extends Component {
         <Header aboutClick={this.aboutClick} portfolioClick={this.portfolioClick}/>
         <Introduction/>
         <div ref={this.refAbout}><About/></div>
+        <div ref={this.refPortfolio}><Portfolio/></div>
         <Contact/>
       </Fragment>
     );
