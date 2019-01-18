@@ -39,8 +39,8 @@ class App extends Component {
     return (
       <Fragment>
         <Header aboutClick={this.aboutClick} portfolioClick={this.portfolioClick}/>
-        <Introduction/>
-        <div ref={this.refAbout}><About/></div>
+        <Introduction aboutClick={this.aboutClick}/>
+        <div ref={this.refAbout}><About portfolioClick={this.portfolioClick}/></div>
         <div ref={this.refPortfolio}><Portfolio/></div>
         <Contact/>
       </Fragment>

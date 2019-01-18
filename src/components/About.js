@@ -3,10 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class About extends Component {
 
-  scroll = ()=>{
-    window.scrollBy({ top: window.innerHeight, left: 0, behavior: 'smooth' })
-  }
-
   render() {
     return (
       <div className="AboutContainer">
@@ -17,7 +13,7 @@ class About extends Component {
           <p>I am seeking full-time employment as junior software engineer.</p>
         </div>
         <div id="aboutDownArrow">
-          <div onClick={()=>this.scroll()} className='arrow'><FontAwesomeIcon icon="caret-down"/></div>
+          <div onClick={()=>this.props.portfolioClick()} className='arrow'><FontAwesomeIcon icon="caret-down"/></div>
         </div>
       </div>
     )
