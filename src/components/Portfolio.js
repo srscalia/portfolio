@@ -10,6 +10,11 @@ class Portfolio extends Component {
   render() {
     return (
       <div className="PortfolioContainer">
+        <div id="portfolioColumnContainer">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div id="aboutDownArrow">
           <div onClick={()=>this.scroll()} className='arrow'><FontAwesomeIcon icon="caret-down"/></div>
         </div>

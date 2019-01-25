@@ -16,8 +16,8 @@ class Header extends Component {
         <div className="headerHover" id="contact" onClick={()=>this.contactClick()}>Contact</div>
         <div className="headerHover" id="shelby" onClick={()=>this.shelbyClick()}>SHELBY</div>
         <div id='navRight'>
-          <div onClick={()=>this.props.aboutClick()} className="headerHover">About</div>
-          <div className="headerHover" onClick={()=>this.props.portfolioClick()}>Portfolio</div>
+          <span onClick={()=>this.props.aboutClick()} className="headerHover">About</span>
+          <span id="portfolio" className="headerHover" onClick={()=>this.props.portfolioClick()}>Portfolio</span>
         </div>
       </nav>
     )
