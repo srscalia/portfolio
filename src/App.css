@@ -116,7 +116,7 @@ body {
 }
 
 #aboutText {
-  max-width: 65vw;
+  max-width: 45vw;
   max-height: 500px;
 }
 
@@ -144,6 +144,18 @@ body {
 }
 
 #portfolioColumnContainer {
-  display: flex;
+  display: grid;
+  width: 65vw;
+  height: 50%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+}
 
+.port {
+  border: 1px solid red;
+}
+
+.port > h3 {
+  text-align: center;
 }

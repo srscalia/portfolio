@@ -11,9 +11,16 @@ class Portfolio extends Component {
     return (
       <div className="PortfolioContainer">
         <div id="portfolioColumnContainer">
-          <div></div>
-          <div></div>
-          <div></div>
+          <div className="port">
+            <h3>Journaling App</h3>
+            <div></div>
+          </div>
+          <div className="port">
+            <h3>Kitty Kard Matching App</h3>
+          </div>
+          <div className="port">
+            <h3>Birthday Reminder App</h3>
+          </div>
         </div>
         <div id="aboutDownArrow">
           <div onClick={()=>this.scroll()} className='arrow'><FontAwesomeIcon icon="caret-down"/></div>
