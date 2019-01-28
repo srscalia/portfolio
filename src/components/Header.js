@@ -12,7 +12,7 @@ class Header extends Component {
 
   render() {
     return (
-      <nav id="header">
+      <nav id="header" className="animated slideInUp slow">
         <div className="headerHover" id="contact" onClick={()=>this.contactClick()}>Contact</div>
         <div className="headerHover" id="shelby" onClick={()=>this.shelbyClick()}>SHELBY</div>
         <div id='navRight'>
