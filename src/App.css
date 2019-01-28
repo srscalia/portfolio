@@ -159,3 +159,21 @@ body {
 .port > h3 {
   text-align: center;
 }
+
+.contactIcon {
+  color: black;
+}
+#twitter:hover {
+  color: #4AA0EC;
+}
+#linked:hover {
+  color: #3076B0;
+}
+
+#email:hover {
+	color: #BEBEBE;
+}
+
+.blackIcon:hover {
+  color: black;
+}
