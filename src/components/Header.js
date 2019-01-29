@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import MediaQuery from 'react-responsive';
 
 class Header extends Component {
 
@@ -12,16 +13,36 @@ class Header extends Component {
 
   render() {
     return (
-      <nav id="header" className="animated slideInUp slow">
-        <div className="headerHover" id="contact" onClick={()=>this.contactClick()}>Contact</div>
-        <div className="headerHover" id="shelby" onClick={()=>this.shelbyClick()}>SHELBY</div>
-        <div id='navRight'>
-          <span onClick={()=>this.props.aboutClick()} className="headerHover">About</span>
-          <span id="portfolio" className="headerHover" onClick={()=>this.props.portfolioClick()}>Portfolio</span>
-        </div>
-      </nav>
+      <Fragment>
+        <MediaQuery query="(min-device-width: 501px)">
+          <nav id="header" className="animated slideInUp slow">
+            <div className="headerHover" id="contact" onClick={()=>this.contactClick()}>Contact</div>
+            <div className="headerHover" id="shelby" onClick={()=>this.shelbyClick()}>SHELBY</div>
+            <div id='navRight'>
+              <div onClick={()=>this.props.aboutClick()} className="headerHover">About</div>
+              <div id="portfolio" className="headerHover" onClick={()=>this.props.portfolioClick()}>Portfolio</div>
+            </div>
+          </nav>
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 500px)">
+          <nav id="headerResponsive" className="animated slideInUp slow">
+            <div className="headerHover" id="contact" onClick={()=>this.contactClick()}>Contact</div>
+            <div className="headerHover" id="shelby" onClick={()=>this.shelbyClick()}>SHELBY</div>
+            <div id='navRight'>
+              <div onClick={()=>this.props.aboutClick()} className="headerHover">About</div>
+              <div id="portfolio" className="headerHover" onClick={()=>this.props.portfolioClick()}>Portfolio</div>
+            </div>
+          </nav>
+        </MediaQuery>
+      </Fragment>
     )
   }
 }
+
+
+
+
+
+
 
 export default Header
