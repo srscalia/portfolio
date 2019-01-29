@@ -61,8 +61,8 @@ body {
   flex-direction: column;
   height: 100vh;
   position: relative;
-  /* margin-left: 15%;
-  margin-right: 15%; */
+  margin-left: 15%;
+  margin-right: 15%;
 
 }
 
@@ -186,12 +186,32 @@ body {
 #portfolioColumnContainer {
   display: grid;
   width: 80%;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(30%, 1fr));
   grid-column-gap: 2%;
   grid-row-gap: 2%;
 }
 
+#portfolioColumnContainerResponsive {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 2%;
+  grid-row-gap: 10%;
+}
+
+.PortfolioContainerResponsive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .port {
+  font-size: 1em;
   border: 1px solid grey;
   border-radius: 10px;
 }
@@ -241,6 +261,11 @@ body {
 .projectText {
   margin-left: 1.5em;
   margin-right: 1.5em;
+}
+.projectTextResponsive {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  font-size: .8em;
 }
 
 h3 {
