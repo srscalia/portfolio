@@ -24,7 +24,7 @@ class Portfolio extends Component {
                     <a className="portfolioLinks" href="https://github.com/srscalia/journal_app_frontend" target="_blank" rel="noopener noreferrer">GitHub </a>
                   </div>
                 </div>
-                <div className="projectText">A safe place to journal your thought. A single-page web application built with:
+                <div className="projectText">A safe place for your thoughts. A single-page journaling application built with:
                   <ul>
                     <li>Ruby on Rails</li>
                     <li>React</li>

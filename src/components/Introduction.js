@@ -9,7 +9,7 @@ class Introduction extends Component {
       <Fragment>
         <MediaQuery query="(min-device-width: 501px)">
           <div className="IntroductionContainer">
-            <center className="animated slideInLeft slow">— hi, my name is shelby. <br/>I'm a full stack developer living in NYC.</center>
+            <center className="animated slideInLeft slow">— hi, my name is shelby. <br/>I'm a full stack developer living in nyc.</center>
             <div id="downArrow">
               <div onClick={()=>this.props.aboutClick()} className='arrow'><FontAwesomeIcon icon="caret-down"/></div>
             </div>
