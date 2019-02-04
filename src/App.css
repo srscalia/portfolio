@@ -61,8 +61,8 @@ body {
   flex-direction: column;
   height: 100vh;
   position: relative;
-  margin-left: 15%;
-  margin-right: 15%;
+  /* margin-left: 15%;
+  margin-right: 15%; */
 
 }
 
@@ -186,14 +186,49 @@ body {
 #portfolioColumnContainer {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, minmax(30%, 1fr));
+  grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
+  /* grid-template-columns: repeat(2, minmax(150px, 350px)); */
   grid-column-gap: 2%;
+
+}
+
+.port1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 1em;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.port2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 1em;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.port1 > h3 {
+  text-align: center;
+}
+.port2 > h3 {
+  text-align: center;
+}
+
+.port > h3 {
+  text-align: center;
+}
+
+.port {
+  font-size: 1em;
+  border: 1px solid grey;
+  border-radius: 10px;
 }
 
 #portfolioColumnContainerResponsive {
   display: grid;
   width: 80%;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 350px));
   grid-column-gap: 2%;
   grid-row-gap: 10px;
 }
@@ -207,16 +242,6 @@ body {
   position: relative;
   margin-left: 10%;
   margin-right: 10%;
-}
-
-.port {
-  font-size: 1em;
-  border: 1px solid grey;
-  border-radius: 10px;
-}
-
-.port > h3 {
-  text-align: center;
 }
 
 .contactIcon {

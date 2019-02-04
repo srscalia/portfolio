@@ -14,7 +14,7 @@ class Portfolio extends Component {
         <MediaQuery query="(min-device-width: 501px)">
           <div className="PortfolioContainer">
             <div id="portfolioColumnContainer">
-              <div className="port">
+              <div className="port1">
                 <h3>Journaling App</h3>
                 <div className="portfolioLinksContainer">
                   <div className="portfolioLink">
@@ -35,7 +35,7 @@ class Portfolio extends Component {
                   </ul>
                 </div>
               </div>
-              <div className="port">
+              <div className="port2">
                 <h3>Kitty Kard Matching App</h3>
                   <div className="portfolioLinksContainer">
                     <div className="portfolioLink">
@@ -52,18 +52,6 @@ class Portfolio extends Component {
                       <li>Vanilla JavaScript</li>
                       <li>Materialize and custom CSS for stying</li>
                     </ul></div>
-              </div>
-              <div className="port">
-                <h3>Birthday Reminder App</h3>
-                  <div className="portfolioLinksContainer">
-                    <div className="portfolioLink">
-                      <a className="portfolioLinks" href="" target="_blank" rel="noopener noreferrer">Demo</a>
-                    </div>
-                    <div className="portfolioLink">
-                      <a className="portfolioLinks" href="" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div>
-                  </div>
-                <div></div>
               </div>
             </div>
             <div id="aboutDownArrow">
@@ -112,18 +100,6 @@ class Portfolio extends Component {
                       <li>Vanilla JavaScript</li>
                       <li>Materialize and custom CSS for stying</li>
                     </ul></div>
-              </div>
-              <div className="port">
-                <h3>Birthday Reminder App</h3>
-                  <div className="portfolioLinksContainer">
-                    <div className="portfolioLink">
-                      <a className="portfolioLinks" href="" target="_blank" rel="noopener noreferrer">Demo</a>
-                    </div>
-                    <div className="portfolioLink">
-                      <a className="portfolioLinks" href="" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div>
-                  </div>
-                <div></div>
               </div>
             </div>
           </div>
